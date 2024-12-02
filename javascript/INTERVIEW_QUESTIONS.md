@@ -1,0 +1,7 @@
+- let, const and var
+- block scope, function scope and global scope
+- tail recrusion (don't mix "use strict" with React Strict Mode)
+- what are generactors, iterator and corotinue pattern
+- spread operator
+- ES6 arrow function vs ES5 function , can arrow function be constructor?
+- TypeScript common types? Mutable vs Immutable?

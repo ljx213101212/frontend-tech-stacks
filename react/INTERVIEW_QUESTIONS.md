@@ -11,3 +11,5 @@ Only keyword will be provided in the answer, please review the related topic if 
 - Can we use async/await in useEffect hook's callback, why?
 - Do we need to import React from 'react'; in every component?
 - Throttling vs Debouncing
+- What is Strict Mode?
+- SyntheticEvent vs NativeEvent

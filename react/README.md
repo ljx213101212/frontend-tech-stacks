@@ -36,6 +36,3 @@ Understanding the routing mechanisms is crucial for building efficient React app
   - **Virtual DOM**: A lightweight tree-like data structure used by React's **reconciliation algorithm**. It compares the **current Virtual** DOM with **a new version**, determining the most efficient way to update the actual DOM. This process optimizes rendering by updating only the necessary parts of the page.
 
 - **react-dom** DOM : renderer for React, handling rendering and hydration. In NextJs, it was Used for client-side rendering and hydration in SSR.
-
-  - **react-dom/server** Server-side rendering for React. In NextJS, it was Used for server-side rendering (SSR) and static site generation (SSG).
-  - **react-dom/client** Client-side rendering for React. In NextJS, it was Used for client-side rendering and hydration in SSR.
