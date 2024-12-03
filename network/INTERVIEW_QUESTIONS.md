@@ -1,0 +1,4 @@
+- HTTP vs HTTPs
+- HTTP 1 vs HTTP/2 vs HTTP/3
+- TCP vs UDP
+- TCP handshakes
