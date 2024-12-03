@@ -13,3 +13,6 @@ Only keyword will be provided in the answer, please review the related topic if 
 - Throttling vs Debouncing
 - What is Strict Mode?
 - SyntheticEvent vs NativeEvent
+- What two modes does React Router support? HashRouter vs BrowserRouter?
+- describe common caching mechanisms used in frontend development?
+- hydration and dehydration in Next.js

@@ -7,10 +7,9 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch Program",
+      "name": "Run Current Open JavaScript",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}\\datastructure-and-algorithm\\test.js",
-      "outFiles": ["${workspaceFolder}/**/*.js"]
+      "program": "${file}" // This runs the currently open file
     }
   ]
 }

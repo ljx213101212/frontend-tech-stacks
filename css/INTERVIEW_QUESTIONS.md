@@ -1,0 +1,3 @@
+- CSS Selector
+- CSS specificity
+- Canvas vs SVG
