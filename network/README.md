@@ -151,3 +151,18 @@ Implementation:
 +-----------+
 
 ```
+
+## XSS vs CSRF
+
+- **XSS**: Exploits user input to inject and execute malicious JavaScript code in the browser.
+
+  - How to avoid?
+    - In HTTP Request Header
+      - Add "HTTP only": Prevent JavaScript access to sensitive cookies.
+      - Add "Secure": To make sure the cookie only pass-through in HTTPS site
+    - Input Validation and Sanitization
+
+- **CSRF**: Exploits a user's authenticated session to perform unauthorized actions, typically triggered via a malicious link or interaction.
+  - Generate Anti-CSRF token and hidden in UI(client side), use this token for sensitive API
+  - Add "Content Security Policy (CSP)" and "Same Site" cookie to avoid cookie to be sent to malicious server by Users interfaction at client site.
+  - Server site to check Referrer/Origin from HTTP Request header
