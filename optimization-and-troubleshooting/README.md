@@ -24,7 +24,7 @@ import("./heavyComponent").then((module) => {
   - Service Workers
 - Code-Spliting (代码分割)
 
-### Optimize Rending Performance
+### Optimize Page Rending Strategy
 
 - Memo
 
@@ -66,7 +66,62 @@ class ItemList extends PureComponent {
 
 - Debounce / Throttle
 
-## Monitor and Improve Performance
+### Apply Cache / Caching Technique
+
+1. Browser Caching
+
+Reduce server load and speed up page load times for repeat visits.
+
+HTTP Headers:
+
+- Cache-Control: Defines caching policies for browsers.
+- Example: Cache-Control: max-age=3600
+- Expires: Sets an expiration date and time for cached resources.
+- ETag: A unique identifier for resources to validate if they have changed.
+- Last-Modified: Indicates when the resource was last updated.
+
+2. Client-Side Caching
+
+Offline-first applications and storing user-specific data.
+
+- Service Workers:
+  - Cache assets and APIs for offline access or faster load times.
+- Local Storage/Session Storage:
+  - Store key-value pairs for persistent or session-based data.
+- IndexedDB:
+  - Store larger datasets like user preferences or offline content.
+
+3. Code-Level Caching
+   Caching logic implemented directly in the application code.
+
+- Memorization
+  - React memo , useMemo, useCallback
+- Lazy Loading
+  - Load and cache data on-demand, then reuse it.
+
+4. CDN(Content Delivery Network) Caching
+
+cache static resources on servers distributed globally to reduce latency and improve load times.
+
+- Edge Caching:
+  - Caches resources at edge servers close to users.
+- Cache Invalidation:
+  - Purge outdated content when deploying updates.
+- Geo-Based Caching:
+  - Serve different content based on the user’s geographic location.
+
+5. DNS Caching
+
+Reduce latency during URL-to-IP address resolution.
+
+- Browser DNS Cache:
+  - Cache DNS lookups in the browser.
+- System-Level DNS Cache:
+  - Cache DNS results on the operating system.
+- ISP DNS Cache:
+  - Cache DNS queries at the Internet Service Provider level.
+
+## Monitor Performance
 
 - Lighthouse
   - First Contentful Paint (FCP)
