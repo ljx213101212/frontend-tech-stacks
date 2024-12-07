@@ -3,8 +3,7 @@ const flatten = (arr) => {
 
   const doFlatten = (arr) => {
     arr.forEach((item) => {
-      //console.log(item, item instanceof Array);
-      if (Array.isArray(arr)) {
+      if (Array.isArray(item)) {
         doFlatten(item);
       } else {
         ans.push(item);
@@ -18,6 +17,4 @@ const flatten = (arr) => {
 };
 
 const input = [1, [2, [3, 4]]];
-//const input = [1, [2]];
-
 console.log(flatten(input));

@@ -2,3 +2,6 @@
 - HTML Semantics
 - async vs defer
 - src vs href
+- accessibility
+- semantic tag vs non-semantic tag
+- Inline Elements, Block-Level Elements, Empty Elements

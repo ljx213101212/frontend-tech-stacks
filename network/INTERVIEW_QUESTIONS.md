@@ -2,3 +2,7 @@
 - HTTP 1 vs HTTP/2 vs HTTP/3
 - TCP vs UDP
 - TCP handshakes
+- 7 layers of the OSI Model
+- 4 layers of TCP/IP Model
+- Cookie, Session, Token
+- CSRF, XSS
