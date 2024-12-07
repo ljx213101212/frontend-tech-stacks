@@ -5,5 +5,5 @@
  * @return {number}
  */
 
-//[TODO]: SAP interview
+//[TODO]
 var calculate = function (s) {};
