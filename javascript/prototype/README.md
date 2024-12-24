@@ -36,3 +36,13 @@ boundFunc(arg2);
 
 - Use Object.prototype.toString for a robust and generic way to check built-in types.
 - Use instanceof or constructor for checking instances of custom types.
+
+
+### Hoisting Rules
+
+- var
+  - to the top with initial value "undefined" 
+- let, const
+  - to the top with "Reference Error" (uninitialized)
+- function 
+  - to the top with full body included

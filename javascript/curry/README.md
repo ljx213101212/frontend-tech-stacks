@@ -1,3 +1,7 @@
+### Key Aspect of curry
+Trasnform a function with mutiple parameters into nested functions,
+each functions take
+
 ### Basic Curry in Frontend Development
 
 #### React
