@@ -1,15 +1,23 @@
 ### Browser Caching
 
+#### HTTP Response Header
 1. Cache-Control: Defined caching policies with public, max-age, and imuutable directives
-
-- https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control
-
+    - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control
 2. Expires: Set an absolute expiration time for resources
-3. ETags: Uilized unique identifiers to validate resource freshness.
+If the cache is not expriration
+  - direct fetch from **disk cache** or **memory cache**
+ 
 
-- **If-Modified-Since** / **If-None-Match**
+3. Last-Modified: Indicated the last modification date of resources for validation.
+4. ETags: Utilized unique identifiers to validate resource freshness.
 
-4. Last-Modified: Indicated the last modification date of resources for validation.
+If the cache is not expriration or not modified, the sever returns
+ - 304 Not Modified 
+
+#### HTTP Request Header
+1. **If-Modified-Since** 
+2. **If-None-Match**
+
 
 ### Common Cache-Control Directives
 

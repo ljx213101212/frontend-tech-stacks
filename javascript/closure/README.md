@@ -54,3 +54,10 @@ axiosWithAuth
   .then((response) => console.log(response.data))
   .catch((error) => console.error(error));
 ```
+
+### Scope Chain
+When a variable is referenced in JavaScript, the engine looks for the variable in the current scope. If it is not found, it continues searching through the outer (parent) scopes, following the chain of scopes until it either:
+
+Finds the variable.
+Reaches the global scope.
+If the variable is not found in the global scope, a ReferenceError is thrown

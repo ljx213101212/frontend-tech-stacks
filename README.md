@@ -5,3 +5,7 @@ This project provides minimal, functional examples for each major topic in the f
 ## Offical Recommeded Road Map by (roadmap.sh)
 
 https://roadmap.sh/frontend
+
+
+## Interview Preparation
+https://docs.pingcode.com/baike/2455919

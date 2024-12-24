@@ -1,0 +1,19 @@
+{
+  "name": "asyncpool",
+  "version": "1.0.0",
+  "description": "https://github.com/rxaviers/async-pool/blob/master/lib/es9.js",
+  "main": "asyncPool.js",
+  "type": "module",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "NODE_ENV=development mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^5.1.2",
+    "mocha": "^11.0.1"
+  }
+}
