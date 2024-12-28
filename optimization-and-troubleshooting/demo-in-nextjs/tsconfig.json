@@ -33,8 +33,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "workers/service-worker.js", "workers/dedicatedWoker.js", "workers/sharedWorker.js"  ],
   "exclude": [
-    "node_modules"
+    "node_modules",
   ]
 }

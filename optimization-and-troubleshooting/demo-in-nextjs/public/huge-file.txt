@@ -1,0 +1,4 @@
+http://localhost:3000/huge-file.txt -> open Network Tab -> 200 OK (from service worker)
+
+10000 words are omtted here...
+
