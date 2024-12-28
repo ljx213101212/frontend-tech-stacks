@@ -33,7 +33,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "pages/customElements-client.jsx"  ],
   "exclude": [
     "node_modules"
   ]

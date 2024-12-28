@@ -1,0 +1,22 @@
+{
+  "name": "host",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "rsbuild dev",
+    "build": "rsbuild build",
+    "preview": "rsbuild preview"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@module-federation/enhanced": "^0.8.6",
+    "@rsbuild/core": "^1.1.13",
+    "@rsbuild/plugin-react": "^1.1.0",
+    "@rspack/core": "^1.1.8"
+  }
+}
