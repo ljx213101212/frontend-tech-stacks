@@ -1,4 +1,10 @@
-## constrast ratio
+## Key Concepts
+
+1. Semantic tags <header>, <nav>.
+2. ARIA to enhance the accessibility of dynamic and interactive content.
+3. Keyboard navigation (tabindex)
+
+## Constrast Ratio
 
 ## Common ARIA Attributes
 

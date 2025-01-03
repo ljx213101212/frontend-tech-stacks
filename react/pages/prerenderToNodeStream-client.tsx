@@ -10,6 +10,8 @@ export default function StreamClientSide() {
       .catch((err) => console.error(err));
   }, []);
 
+  //DOMPurify
+  //ReactHtmlParser
   return (
     <div>
       <h2>PrerenderToNodeStream Content Below:</h2>

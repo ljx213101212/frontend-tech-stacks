@@ -1,0 +1,74 @@
+<!-- //Reference:  Duyi Education 
+//https://duyiedu.com/ -->
+<!-- //https://medium.com/@haiou-a/has-the-javascript-event-loop-changed-are-there-no-more-macro-tasks-lets-see-what-s-new-8e80521837e1 -->
+
+<html>
+
+<head>
+  <title>event loop 2 demo</title>
+</head>
+
+<body>
+  <button id="begin">Start</button>
+  <button id="interaction">Add Interaction Task</button>
+
+  <div>
+    <div>This demo is to show the Macro Task nowadays has been updated to several new type of tasks with different priority</div>
+    <div>Such as Timeout Task and Interaction Task (higer priority)</div>
+    <p>
+      <li>1. Open DevTools and observe the console</li>
+      <li>2. Click Start button</li>
+      <li>3. Click Add Interaction Task button when you see "add interaction queue"</li>
+
+    <div>
+      <li>add delay queue</li>
+      <li>add interaction queue</li>
+      <li><b>interaction queue is executing</b></li>
+      <li>delay queue is executing</li>
+
+    </div>
+    </p>
+  </div>
+
+</body>
+<script>
+
+  // async function sleep(delay = 2000) {
+  //   return new Promise((resolve) => {
+  //     setTimeout(() => {
+  //       resolve();
+  //     }, delay);
+  //   });
+  // }
+
+  function delay(t = 2000) {
+    const startTime = Date.now();
+    while (Date.now() - startTime < t);
+  }
+
+
+  async function addDelay() {
+    console.log("add delay queue");
+    setTimeout(() => {
+      console.log("delay queue is executing");
+    }, 0);
+    delay(2000);
+  }
+
+  async function addInteraction() {
+    console.log("add interaction queue");
+    interaction.onclick = () => {
+      console.log("interaction queue is executing");
+    }
+    delay(2000);
+  }
+
+
+  begin.onclick = function () {
+    addDelay();
+    addInteraction();
+  }
+
+</script>
+
+</html>

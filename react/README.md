@@ -7,6 +7,8 @@ Next.js is a powerful React framework that enhances the development experience w
 #### Key Concepts
 
 - **Server Components (Server-Side SSR)**: Render only on the server.
+  - SEO: facilitating browser crawler to get infomation from the first page.
+  - Boosting FCP and resolve white screen
 - **Client Components (Client-site CSR)**: Render on the server for initial HTML, then hydrate on the client.
 - **Static-Side (SSG)**: Pre-rendered pages in Build time for performance and SEO.
 - **Incremental Static Regeneration (ISR)**: (similair to SSG) Updates static content periodically without rebuilding the entire app.

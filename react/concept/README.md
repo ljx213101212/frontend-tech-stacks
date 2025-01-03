@@ -1,3 +1,19 @@
+### Life Cycle
+1. Component mount
+    - constructor
+    - getDerivedStateFromProps
+    - render
+    - componentDidMount
+2. Component update
+    - getDerivedStateFromProps
+    - showComponentUpdate
+    - render
+    - getSnapShotBeforeUpdate
+    - componentDidUpdate
+3. Component unmount
+    - componentWillUnmount
+
+
 ### Fiber vs Virtual DOM
 
 Both are React internal data structure.
@@ -15,7 +31,7 @@ Fiber was introduced from React 16, Virtual DOM was introduced before React 16
 | **Flexibility**       | Rigid update cycles.                   | Allows pausing, resuming, and re-prioritizing tasks. |
 
 
-Fiber keywords:  pausing, resuming, priority scheduling (优先级调度), Incremental work units (增量渲染), Fiber Node, time-slicing (时间片)
+Fiber keywords:  pausing(可中断), resuming, priority scheduling (优先级调度), Incremental work units (增量渲染), Fiber Node, time-slicing (时间片)
 
 
 ### Reconciliation (Fiber)

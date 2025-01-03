@@ -1,1 +1,4 @@
 - ErrorBoundary
+    - static getDerivedStateFromError() -> store in ErrorBoundary Component
+    - componentDidCatch()
+    - render fallback div when errorState is true.

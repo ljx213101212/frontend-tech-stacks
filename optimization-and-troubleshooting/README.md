@@ -4,7 +4,9 @@
 
 - Minifiy/Compress assets (CSS/JavaScript/HTML/image) (静态资源优化)
 - CDN （内容分发网络, 访问就近资源）
-- Prefetching/Preloading/Async vs Defer/Lazy Loading (懒加载)
+- Prefetching/Preloading (预加载)
+- Async vs Defer (异步加载)
+- Lazy Loading (懒加载)
 
 ```html
 <link rel="preload" href="main.css" as="style" />
@@ -22,11 +24,13 @@ import("./heavyComponent").then((module) => {
 - Caching (本地缓存)
   - Cache-Control
   - Service Workers
-- Code-Spliting (代码分割)
+- Code-Spliting (代码分割), TreeShaking
+- Optimizing Image
+- SSR / SSG
 
 ### Optimize Page Rending Strategy
 
-- Memo
+- **Memo** and **PureComponent**
 
 ```javascript
 const MemoizedComponent = React.memo(MyComponent);
@@ -45,8 +49,6 @@ const ItemList = React.memo(({ items }) => {
 });
 ```
 
-- Pure Function
-
 ```javascript
 import React, { PureComponent } from "react";
 
@@ -64,7 +66,9 @@ class ItemList extends PureComponent {
 }
 ```
 
-- Debounce / Throttle
+- **Debounce** / **Throttle**
+
+- add **key** attribute
 
 ### Apply Cache / Caching Technique
 

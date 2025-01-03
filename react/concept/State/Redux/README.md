@@ -1,4 +1,4 @@
-### Redudx
+### Redux
 
 1. State Management - global singleton state -> **store**
 2. Invoke by **Action** and **Dispatch**

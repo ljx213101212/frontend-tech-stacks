@@ -5,7 +5,14 @@ This project provides minimal, functional examples for each major topic in the f
 ## Offical Recommeded Road Map by (roadmap.sh)
 
 https://roadmap.sh/frontend
+https://docs.pingcode.com/baike/2455919
 
 
 ## Interview Preparation
-https://docs.pingcode.com/baike/2455919
+
+- Basic (八股)
+  - https://fe.ecool.fun/topic-list
+  - https://bigfrontend.dev/
+
+- coding
+  - https://leetcode.com/studyplan/30-days-of-javascript/
