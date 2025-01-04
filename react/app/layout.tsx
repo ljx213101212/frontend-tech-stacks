@@ -1,4 +1,5 @@
 import "@/app/globals.css";
+import { Providers } from "./providers";
 
 export default function RootLayout({
   children,
@@ -7,7 +8,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="flex min-h-screen w-full flex-col">{children}</body>
+      <body className="flex min-h-screen w-full flex-col">
+          <Providers>{children}</Providers>
+        </body>
     </html>
   );
 }

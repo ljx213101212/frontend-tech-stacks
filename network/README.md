@@ -152,6 +152,24 @@ Implementation:
 
 ```
 
+### Workflow
+
+1. TCP Handshake
+
+-- Asymmetric Encryption
+2. Certificate check 
+  - Client A <---Certificate (**public key**)---- Server B (**public key** + **private key**)
+  - Client A verify Digital Signature
+3. Key Exchange
+  - Client A ----  **session Key**, **Cipher Spec** (encrypted by **public key**),  ----> Server B
+  - Server B get **session Key** by decrypting using (**private key**) 
+  
+
+-- Symmetric Encryption
+4. Data Transmission
+  both side encrypt/decript data with **Cipher Spec** by **sessionkey**
+
+
 ## XSS vs CSRF
 
 - **XSS**: Exploits user input to inject and execute malicious JavaScript code in the browser.

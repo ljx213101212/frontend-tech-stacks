@@ -51,6 +51,16 @@ const loggerMiddleware = (store) => (next) => (action) => {
   console.log("Dispatching:", action);
   return next(action);
 };
+
+const nextHandler = loggerMiddleware({
+    dispatch: () => console.log("this function call is action");
+    getState: () => ({
+       "data": "value"
+    })
+})
+
+nextHandler(() => console.log("this function call is next"))
+
 ```
 
 ### Loadash Curry in Frontend Development

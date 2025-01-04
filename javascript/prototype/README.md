@@ -27,6 +27,14 @@ boundFunc(arg2);
 
 ### this (ES5 !== ES6)
 
+behave differently in different cases:
+  - Global Context
+  - Function Context
+  - Constructor Functions
+  - Explicit Binding (apply, call, bind)
+  - Arrow Functions
+  - Event Handlers
+
 - ES5
   - **this refers to the object that is calling the function. (dynamic)**
 - ES6
@@ -46,3 +54,7 @@ boundFunc(arg2);
   - to the top with "Reference Error" (uninitialized)
 - function 
   - to the top with full body included
+
+
+### Prototype inheritance
+If we want to read a property of obj or call a method, and it doesn’t exist, then JavaScript tries to find it in the prototype, if it present, then take it as property, we call this process **Prototype inheritance**

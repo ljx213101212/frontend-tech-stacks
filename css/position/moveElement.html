@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            /* padding-left: 100px;  method 1*/
+            /* position: relative; */
+
+            /* display: flex; method 6
+            justify-content: flex-start;
+            gap: 100px; */
+        }
+
+        .box {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            /* margin-left: 100px; method 2*/
+
+            /* position: relative; method 3*/
+            /* left: 100px; */
+
+            /* position: fixed; method 4 */
+            /* left: 100px; */
+
+            /* transform: translateX(100px); method 5*/
+        }
+    </style>
+</head>
+
+
+<body>
+    <h3>Move Element to right 100px</h3>
+    <div class="container">
+        <span style="visibility: hidden; width: 0;"></span>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
