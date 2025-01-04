@@ -18,7 +18,7 @@ const useDebounce = (debouncedInput: string) => {
   return debouncedValue;
 };
 
-const useTrottle = (trottledInputRef: RefObject<HTMLInputElement>) => {
+const useTrottle = (trottledInputRef: RefObject<any>) => {
   const [trottledValue, setTrottledValue] = React.useState("");
 
   React.useEffect(() => {
@@ -38,8 +38,8 @@ const HandleWithInput = () => {
   const [debouncedInput, setDebouncedInput] = React.useState("");
   const debouncedOutput = useDebounce(debouncedInput);
 
-  const trouttledRef = React.useRef<HTMLInputElement>(null);
-  const trottledOutput = useTrottle(trouttledRef);
+  const thottledRef = React.useRef<HTMLInputElement>(null);
+  const trottledOutput = useTrottle(thottledRef);
 
   return (
     <div className="flex flex-col items-center justify-center">
@@ -56,7 +56,7 @@ const HandleWithInput = () => {
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-2xl font-bold">Throttle</h1>
         <input
-          ref={trouttledRef}
+          ref={thottledRef}
           type="text"
           className="border-2 border-black p-2"
         />
