@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            border: 1px solid green;
+
+            /* 0.1px padding created a "content separating" to resolve margin collapsing */
+            padding: 0.1px;
+        }
+
+        .box {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            border: 5px solid blue;
+
+            /* margin collapsing */
+            margin: 50px;  
+        }
+    </style>
+</head>
+
+
+<body>
+    <h3>Margin Collapsing</h3>
+    <div class="container">
+        <span style="visibility: hidden; width: 0;"></span>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

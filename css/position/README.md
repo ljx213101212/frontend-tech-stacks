@@ -17,5 +17,18 @@ relative to **viewport**
 - relative to **closest scrolling ancestor block**
 
 
+### transform 
+
+translate 和 scale: 简单的线性数学操作，计算开销小, 并且只触发合成层 (compositing)
+
+```css
+transfrom: translate(100px); 
+```
+rotate: 涉及三角函数和插值计算，开销更大, 并且触发 回流（reflow）和 重绘(repaint) 。
+
+```
+transform: rotate(45deg) scale(1.2) translateX(100px)
+```
+
 ### Reference
 https://developer.mozilla.org/en-US/docs/Web/CSS/position

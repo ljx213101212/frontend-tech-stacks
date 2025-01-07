@@ -17,3 +17,12 @@
     - Creates extra space around an element, outside the border.
 - padding
     - Creates extra space within an element, between the content and the border.
+
+#### margin collapsing
+- Adjacent siblings
+- No content separating parent and descendants
+- Empty blocks
+
+
+### Reference
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_model/Mastering_margin_collapsing
